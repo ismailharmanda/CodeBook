@@ -32,8 +32,8 @@ export const unpkgPathPlugin = () => {
           return {
             loader: "jsx",
             contents: `
-              const message = require('medium-test-pkg');
-              console.log(message);
+              import React,{useState} from "react";
+              console.log(React,useState)
             `,
           };
         }
